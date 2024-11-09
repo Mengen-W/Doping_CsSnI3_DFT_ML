@@ -1,8 +1,32 @@
 # DopingCsSnI3_DFT_ML
-This project combines DFT and ML to predict the formation energy of defect charge states, specifically neutral (q=0) and q=+1, as well as the charge transition level (CT) of +1/0 for substitutional defects at cation sites in CsSnI3.
+This is the documentation for the work that combines density functional theory (DFT) and machine learning (ML) algorithms to predict the formation energy and charge transition levels in of the substitutional defects in cesium tin iodide.
 
-The DFT calculations were used to generate a dataset of formation energies and charge transitions for training the model, which is stored in the "Formation energy" folder. The formation energies for substitutional defects on Sn and Cs sites, as well as intrinsic defects, including the formation energy diagram, are also collected in this folder.
+The DFT calculations were used to generate a dataset of formation energies at two charge states (q=+1 and q=0) and charge transition levels, which is stored in "Formation energy". The raw data to calculate defect formation energies and the code to generate formation energy diagrams are also included in this folder.
 
-To train the models, feature properties are required. However, to select the most predictive features and remove redundant ones, we used the Pearson correlation coefficient to eliminate strongly correlated features. The Pearson correlation results and the final list of features are stored in the "Pearson correlation" folder under different chemical potential conditions.
+The Pearson correlation analysis of features and target properties are included in "Pearson correlation".
 
-To find the most predictive models, five regression models were employed in this work: Linear Regression (LR), LASSO, Gaussian Process Regression (GPR), Kernel Ridge Regression (KRR), and Random Forest Regression (RFR). These models are collected in the "Regression models" folder.
+The ML code to train and predict formation energies and charge transition levels are provided in "Regression models", including Linear Regression (LR), Gaussian Process Regression (GPR), Kernel Ridge Regression (KRR), and Random Forest Regression (RFR).
+
+## License
+This code is made available under the MIT license.
+
+## Requirements
+The ML training and prediction codes are compatible with Python 3 and the following open source Python packages should be installed:
+
+* numpy
+
+* matplotlib
+
+* pandas
+
+* scikit-learn
+
+## Contact
+Mengen Wang, SUNY Binghamton (mengenwang@binghamton.edu)
+
+Chadawan Khamdang, SUNY Binghamton 
+
+
+
+
+
