@@ -1,4 +1,4 @@
-# DopingCsSnI3_DFT_ML
+# Doping CsSnI3 DFT ML
 This is the documentation for the work that combines density functional theory (DFT) and machine learning (ML) algorithms to predict the formation energy and charge transition levels in of the substitutional defects in cesium tin iodide.
 
 The DFT calculations were used to generate a dataset of formation energies at two charge states (q=+1 and q=0) and charge transition levels, which is stored in "Formation energy". The raw data to calculate defect formation energies and the code to generate formation energy diagrams are also included in this folder.
