@@ -19,7 +19,7 @@ The ML training and prediction codes are compatible with Python 3 and the follow
 
 * pandas
 
-* scikit-learn
+* scikit-learn (1.5.2)
 
 ## Contact
 Mengen Wang, SUNY Binghamton (mengenwang@binghamton.edu)
