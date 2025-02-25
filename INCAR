@@ -1,0 +1,34 @@
+#SYSTEM = Optimize defect structure
+ISTART = 1
+LVHAR  =.TRUE.		#The Hartree potential will be written to a file
+LORBIT = 11
+NPAR   = 8
+
+#Electronic Relaxation 
+PREC = Normal
+ENCUT  = 400
+NELM   = 60
+EDIFF  = 1E-06		#Convergence criterion for electronic energy
+EDIFFG = -0.01		#Convergence criterion for ionic relaxation
+ALGO   = Normal		#Medium precision for the plane wave basis set
+NELMIN = 6
+NELECT = 550		#Fixes the total number of electrons in the system. In this example, it corresponds to the Y_Sn defect in the q=+1 charge state
+
+#Ionic Relaxation
+NSW    = 1000
+IBRION = 2
+ISIF   = 2		#Optimizes atomic positions while keeping the cell shape and volume fixed
+
+#DOS related values:
+ISMEAR = 0
+SIGMA  = 0.01
+
+
+#SCRIP FOR HSE
+LHFCALC  = .TRUE.
+HFSCREEN = 0.2
+PRECFOCK = Fast
+AEXX     = 0.54		#Sets the fraction of Hartree-Fock exchange
+
+#SOC related tags:
+LSORBIT = .TRUE.
